@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: MumbaiHousePricePrediction
+Version: 0.1
+Author: yash mohite
+Author-email: mohite.yassh@gmail.com
+Requires-Dist: Flask
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
