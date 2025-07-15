@@ -8,6 +8,7 @@ application = Flask(__name__)
 app = application
 
 # Helper function to format rupees
+
 def format_inr(value):
     if value >= 1_00_00_000:
         return f"₹{value / 1_00_00_000:.2f} Cr"
@@ -47,11 +48,13 @@ def predict_datapoint():
         predict_pipline = PredictPipline()
         pred = predict_pipline.Predict(final_data)
 
+        
         # Handle log-transformed output if applicable
         # Uncomment the line below if you trained on log1p(price)
         # result = np.expm1(pred[0])
 
         # If not log-transformed, use raw prediction
+        
         result = pred[0]
         formatted_result = format_inr(result)
 
